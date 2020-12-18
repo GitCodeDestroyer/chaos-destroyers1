@@ -1,0 +1,187 @@
+* {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	list-style: none;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'RobotoLight';
+}
+
+/*******************************************************/
+/*********************** HEADER ************************/
+/*******************************************************/
+
+.header {
+	z-index: 10;
+	width: 100%;
+	height: 70px;
+	color: #222;
+	font-family: 'Michroma', sans-serif;
+	padding: 0 2.5%;
+}
+
+.header .logo {
+	float: left;
+	height: 70px;
+}
+
+.header .logo img {
+	height: 75px;
+	z-index: 100;
+	position: absolute;
+}
+
+.header .menu {
+	float: right;
+}
+
+.header .menu li {
+	display: inline-block;
+}
+
+.header .menu a li {
+	color: #222;
+	padding: 23.5px 2vh;
+	transition: all .3s;
+}
+
+.header .menu a li:hover {
+	color: #29ABE2;
+}
+
+.header .menu .back {
+	background: #533E2F;
+	color: #fff;
+}
+
+/*******************************************************/
+/*********************** IMAGES ************************/
+/*******************************************************/
+
+.image {
+	background: url(../img/Splash.png) no-repeat;
+	background-position: center 55%;
+	background-size: cover;
+	height: 500px;
+}
+
+.image h1 {
+	z-index: 1;
+}
+
+.image .all {
+	text-align: center;
+	padding-top: 15%;
+	color: #fff;
+	font: 20px 'Michroma';
+	width: 100%;
+	height: 500px;
+	position: absolute;
+	background: rgba(38,123,184,.5);
+}
+
+/*******************************************************/
+/******************** IMAGE FOOTER *********************/
+/*******************************************************/
+
+.img-footer {
+	width: 100%;
+}
+
+.img-footer .thumb {
+	width: 33%;
+	display: inline-block;
+	text-align: center;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.img-footer .thumb h1 {
+	margin: 20px 0;
+}
+
+.img-footer .thumb img {
+	width: 30%;
+	margin: 0 35%;
+}
+
+/*******************************************************/
+/*********************** ABOUTS ************************/
+/*******************************************************/
+
+.about {
+	padding: 10px 0;
+}
+
+.about h1 {
+	margin-top: 50px;
+	text-align: center;
+	font-family: 'Michroma';
+}
+
+.sections {
+	margin: 50px 0;
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+
+.sections .img-content {
+	width: 45%;
+	height: 250px;
+	background: #533E2F;
+	position: relative;
+	display: inline-block;
+	float: left;
+	color: #fff;
+}
+
+.id1 .img-content img {
+	height: 120%;
+	margin-left: 11%;
+}
+
+.sections .content {
+	padding-right: 6%;
+	margin-top: 20px;
+	width: 47%;
+	display: inline-block;
+	float: right;
+}
+
+.id2 .img-content {
+	float: right;
+}
+
+.id2 .content {
+	float: left;
+	padding-left: 6%;
+}
+
+.id2 .img-content img {
+	height: 120%;
+	right: 11%;
+	position: absolute;
+}
+
+.id3 .img-content img {
+	margin-top:	15%; 
+	margin-left: 11%;
+	height: 40%;
+}
+
+/*******************************************************/
+/*********************** FOOTER ************************/
+/*******************************************************/
+
+.footer {
+	height: 50px;
+	line-height: 50px;
+	font-size: 20px;
+	text-align: center;
+	color: #3d3d3d;
+}

@@ -1,0 +1,205 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	transition: all .3s;
+}
+
+.health-bar {
+	height: 12%;
+	width: 100%;
+	background: #222;
+	top: 0;
+	position: fixed;
+	border-bottom: .2em solid #fff;
+}
+
+.container {
+	position: fixed;
+	width: 40%;
+	height: 6.5%;
+	top: 2.75%;
+	border-bottom: solid #ddd;
+	border-right: solid #ddd;
+	border-left: solid #ddd;
+	border-top: solid #ddd;
+	border-width: 2px;
+	border-radius: 1px;
+	overflow: hidden;
+	box-shadow: 0 3px 4px rgba(0,0,0,.3);
+}
+
+.game_over,
+.you_win {
+	position: fixed;
+	text-align: center;
+	height: 100px;
+	width: 100%;
+	top: 100px;
+	font: 100px 'Ravi Prakash';
+	z-index: -1;
+	text-transform: uppercase;
+}
+
+.game_over {
+	color: #32b0e8;
+}
+
+.you_win {
+	color: #e83232;
+}
+
+.bar1,
+.bar2 {
+	height: 100%;
+	background: #222;
+	transition: all .3s;
+	width: 100%;
+}
+
+.life1 {
+	left: 2.5%;
+	background-color: #e83232;
+}
+
+.life2 {
+	left: 57.5%;
+	background-color: #32b0e8;
+}
+
+.magic-bar {
+	position: fixed;
+	width: 10%;
+	height: 75%;
+	top: 12%;
+	background: #222;
+	border-right: .2em solid #fff;
+}
+
+.magic1 {
+	width: 100%;
+	height: 33.3333%;
+	display: list-item;
+	padding: 20% 10%;
+}
+
+.upgrate {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	z-index: 100;
+	margin-top: -100%;
+	background: #2CC474;
+}
+
+.upgrate .time1 {
+	font: 50px cursive;
+	font-style: bold;
+	text-align: center;
+}
+
+.upgrate .fa-close {
+	float: right;
+	font-size: 4em;
+}
+
+.upgrate .fa-close:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.result {
+	left: 10%;
+	top: 12%;
+	height: 75%;
+	width: 90%;
+	background: url(../img/EEzICUb.png) no-repeat;
+	background-position: 0 50%;
+	position: fixed;
+}
+
+.time {
+	position: fixed;
+	font-family: 'Ravi Prakash';
+	color: #fff;
+	left: 10%;
+	width: 20%;
+	height: 11%;
+	padding-left: 2%;
+	background: #fff;
+	border-bottom-right-radius: 100%;
+}
+
+.active {
+	height: 13%;
+	width: 100%;
+	background: #222;
+	top: 87%;
+	position: fixed;
+	border-top: .2em solid #fff;
+}
+
+.hero {
+	margin-top: 18%;
+	position: fixed;
+	background: url(../img/img/knight-pose.png) no-repeat;
+	background-size: 100%;
+	width: 120px;
+	height: 170px;
+	transition: 0s;
+	margin-left: 10%;
+}
+
+.hero:active {
+	background-position: 1.1% 0;
+	background-repeat: no-repeat;
+}
+
+.enemy {
+	margin-top: 18%;
+	position: fixed;
+	background: url(../img/img/captain-pose.png) no-repeat;
+	background-size: 100%;
+	width: 80px;
+	height: 170px;
+	transition: 0s;
+	right: 16%;
+}
+
+.enemy:active {
+	background-position: 1.1% 0;
+	background-repeat: no-repeat;
+}
+
+.button1 {
+	height: 100%;
+	width: 33.33333%;
+	display: inline-block;
+}
+
+.button1:hover,
+.magic1:hover {
+	background-color: #999;
+}
+
+.button1:active,
+.magic1:active {
+	background-color: #e83232;
+}
+
+.attack {
+	background: url(../img/img-part/att_all.gif) no-repeat center;
+	background-size: 10% 50%;
+}
+
+.move {
+    background: url(../img/img-part/2.gif) no-repeat center;
+	background-size: 10% 50%;
+	margin-left: -4px;
+}
+
+.block {
+    background: url(../img/img-part/def_i.gif) no-repeat center;
+	background-size: 10% 50%;
+	margin-left: -4px;
+}
